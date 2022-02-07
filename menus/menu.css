@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Shrikhand', sans-serif;
+    margin: 0;
+  }
+  
+  h3 {
+    font-weight: 700;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  a {
+    outline: none;
+    color: black;
+    text-decoration: none;
+  }
+  
+  i {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
+  button {
+    border: none;
+    background: linear-gradient(#FF79DA,#9356DC);
+    color: white;
+    height: 45px;
+    width: 175px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 20px 0;
+    background-color: #fff;
+  }
+
+  header i {
+      position: absolute;
+      left: 20px;
+      top: 35px;
+  }
+
+  .background img {
+    width: 100%;
+  }
+
+  .main-container {
+    background-color: rgb(243, 243, 243);
+    padding: 10px 20px 20px 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position: relative;
+    margin-top: -45px;
+  }
+
+  .main-container h3 {
+    font-family: 'Shrikhand', sans-serif;
+  }
+
+  .main-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-content h4 {
+    padding-bottom: 5px;
+    width: 30px;
+    color: grey;
+    border-bottom: 4px solid #99E2D0;
+  }
+
+  .menu-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-card-left label {
+    font-weight: 700;
+  }
+
+  .menu-card p{
+    color: grey;
+    font-weight: 100;
+  }
+
+  .order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 30px 0;
+  }
+
+  footer {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 20px 0 20px 20px;
+  }
+  
+  footer h2 {
+    font-family: 'Shrikhand', sans-serif;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-row i {
+    padding-right: 10px;
+  }
