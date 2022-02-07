@@ -1,11 +1,195 @@
-element {
-    --primary-color: #9356DC;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
+
+    /* --primary-color: #9356DC;
     --secondary-color: #FF79DA;
-    --tertiary-color: #99E2D0;
-  }
+    --tertiary-color: #99E2D0; */
 
 body {
-    max-width: 400px;
     margin: 0 auto;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Shrikhand', sans-serif;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+}
+
+i {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 20px 0;
+  background-color: #fff;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  color: grey;
+  box-shadow: inset 0 0 2px grey;
+  height: 40px;
+}
+
+.location i {
+  margin-right: 10px;
+}
+
+.presentation {
+  background-color: rgb(240, 240, 240);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px 20px 20px;
+}
+
+.presentation p {
+  margin-bottom: 20px;
+}
+
+.presentation button {
+  border: none;
+  background: linear-gradient(#FF79DA,#9356DC);
+  color: white;
+  height: 45px;
+  width: 175px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.steps {
+  padding: 0 20px 20px 20px;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  border-radius: 20px;
+  height: 60px;
+  width: 350px;
+  margin: 10px 0 10px 10px;
+  font-weight: 700;
+}
+
+.step-card p {
+  width: 200px;
+}
+
+.step-card-number {
+  background-color:#9356DC;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  height: 24px;
+  width: 24px;
+  margin-left: -45px;
+}
+
+.restaurants {
+  background-color: rgb(240, 240, 240);
+  padding: 10px 20px 20px 20px;
+}
+
+.restaurants-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
+
+.new-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  color: green;
+  background-color: #99E2D0;
+  height: 25px;
+  width: 80px;
+  font-weight: 700;
+  margin-top: -140px;
+  right: 75px;
+}
+
+.restaurant-card {
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 250px;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: white;
+}
+
+.restaurant-card img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.card-bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.card-bottom-container p {
+  color: grey;
+  font-weight: 100;
+}
+
+footer {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  padding: 20px 0 20px 20px;
+}
+
+footer h2 {
+  font-family: 'Shrikhand', sans-serif;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-row i {
+  padding-right: 10px;
 }
