@@ -1,0 +1,11 @@
+element {
+    --primary-color: #9356DC;
+    --secondary-color: #FF79DA;
+    --tertiary-color: #99E2D0;
+  }
+
+body {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
