@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
+
+@keyframes load {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes validate {
+  0% {
+    width: 0px;
+    background-color: #99E2D0;
+  }
+  100% {
+    width: 60px;
+    background-color: #99E2D0;
+  }
+}
+
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -92,9 +115,57 @@ h1 {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding: 10px 10px 10px 10px;
+    padding: 0 0 0 10px;
     margin-bottom: 10px;
     border-radius: 10px;
+  }
+
+  .validate {
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: 0;
+    animation: validate 2s forwards;
+  }
+
+  .one {
+    animation: load 1s forwards;
+  }
+
+  .two {
+    animation: load 1.5s forwards;
+  }
+
+  .three {
+    animation: load 2s forwards;
+  }
+
+  .four {
+    animation: load 2.5s forwards;
+  }
+
+  .five {
+    animation: load 3s forwards;
+  }
+
+  .six {
+    animation: load 3.5s forwards;
+  }
+
+  .seven {
+    animation: load 4s forwards;
+  }
+
+  .eight {
+    animation: load 4.5s forwards;
+  }
+
+  .nine {
+    animation: load 5s forwards;
+  }
+
+  .ten {
+    animation: load 5.5s forwards;
   }
 
   .menu-card-left label {
