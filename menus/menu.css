@@ -20,6 +20,16 @@
   100% {
     width: 60px;
     background-color: #99E2D0;
+    margin-left: 30px;
+  }
+}
+
+@keyframes move {
+  0% {
+    right: 10px;
+  }
+  100% {
+    right: 70px;
   }
 }
 
@@ -125,7 +135,20 @@ h1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     right: 0;
-    animation: validate 2s forwards;
+    z-index: 1;
+  }
+
+  .menu-card:hover .validate {
+    animation: validate 1s forwards;
+  }
+
+  .menu-card:hover .menu-card-right {
+    animation: move 1s forwards;
+  }
+
+  .menu-card-right {
+    position: absolute;
+    right: 10px;
   }
 
   .one {
