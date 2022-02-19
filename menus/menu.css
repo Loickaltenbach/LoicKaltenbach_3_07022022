@@ -97,6 +97,68 @@ h1 {
     border-radius: 10px;
   }
 
+  .validate {
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .menu-card:hover .validate {
+    animation: validate 1s forwards;
+  }
+
+  .menu-card:hover .menu-card-right {
+    animation: move 1s forwards;
+  }
+
+  .menu-card-right {
+    position: absolute;
+    right: 10px;
+  }
+
+  .one {
+    animation: load 1s forwards;
+  }
+
+  .two {
+    animation: load 1.5s forwards;
+  }
+
+  .three {
+    animation: load 2s forwards;
+  }
+
+  .four {
+    animation: load 2.5s forwards;
+  }
+
+  .five {
+    animation: load 3s forwards;
+  }
+
+  .six {
+    animation: load 3.5s forwards;
+  }
+
+  .seven {
+    animation: load 4s forwards;
+  }
+
+  .eight {
+    animation: load 4.5s forwards;
+  }
+
+  .nine {
+    animation: load 5s forwards;
+  }
+
+  .ten {
+    animation: load 5.5s forwards;
+  }
+
   .menu-card-left label {
     font-weight: 700;
     overflow: hidden;
