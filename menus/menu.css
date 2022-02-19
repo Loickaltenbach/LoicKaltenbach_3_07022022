@@ -226,6 +226,10 @@ h1 {
     padding: 20px 0 20px 20px;
   }
   
+  footer a {
+    color: white;
+  }
+
   footer h2 {
     font-family: 'Shrikhand', sans-serif;
   }
