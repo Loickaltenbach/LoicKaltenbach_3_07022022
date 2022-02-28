@@ -33,6 +33,17 @@
   }
 }
 
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    color: white;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: white;
+  }
+}
+
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -131,6 +142,8 @@ h1 {
   }
 
   .validate {
+    display: flex;
+    justify-content: center;
     height: 60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -139,8 +152,17 @@ h1 {
     cursor: pointer;
   }
 
+  .validate i {
+    color: transparent;
+    align-self: center;
+  }
+
   .menu-card:hover .validate {
     animation: validate 1s forwards;
+  }
+
+  .menu-card:hover .validate i {
+    animation: rotation 1s forwards;
   }
 
   .menu-card:hover .menu-card-right {
