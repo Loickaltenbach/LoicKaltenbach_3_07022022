@@ -105,6 +105,14 @@ header {
   font-weight: 700;
 }
 
+.step-card:hover {
+  background-color: #9256dc23;
+}
+
+.step-card:hover i {
+  color: #9356DC;
+}
+
 .step-card p {
   width: 200px;
 }
@@ -140,15 +148,15 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  z-index: 1;
+  position: relative;
   color: green;
   background-color: #99E2D0;
   height: 25px;
   width: 80px;
   font-weight: 700;
   margin-top: -140px;
-  right: 75px;
+  margin-bottom: 115px;
+  margin-left: 160px;
 }
 
 .restaurant-card {
@@ -158,6 +166,10 @@ header {
   height: 200px;
   margin-bottom: 20px;
   background-color: white;
+}
+
+.restaurant-card:hover i {
+  background-color: linear-gradient(#FF79DA,#9356DC);
 }
 
 .restaurant-card img {
@@ -202,4 +214,26 @@ footer h2 {
 
 .footer-row i {
   padding-right: 10px;
+}
+
+@media screen and (min-width: 550px) {
+  .restaurants-container {
+    justify-content: space-evenly;
+    height: 450px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 10%;
+  }
+  .step-card {
+    height: 60px;
+    width: 90%;
+  }
+  .step-card p {
+    width: 40%;
+  }
+  .step-card-number {
+    height: 30px;
+    width: 30px;
+    margin-left: -20%;
+  }
 }

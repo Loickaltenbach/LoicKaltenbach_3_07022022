@@ -123,6 +123,10 @@ h1 {
     align-items: center;
   }
 
+  .main-title i:hover {
+    fill: linear-gradient(#FF79DA,#9356DC);
+  }
+
   .main-content h4 {
     padding-bottom: 5px;
     width: 30px;
