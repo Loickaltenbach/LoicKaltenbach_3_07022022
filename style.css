@@ -7,6 +7,7 @@
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
 }
 
 h1 {
@@ -105,6 +106,10 @@ header {
   font-weight: 700;
 }
 
+.step-card i {
+  cursor: default;
+}
+
 .step-card:hover {
   background-color: #9256dc23;
 }
@@ -168,8 +173,8 @@ header {
   background-color: white;
 }
 
-.restaurant-card:hover i {
-  background-color: linear-gradient(#FF79DA,#9356DC);
+.restaurant-card:hover img {
+  opacity: 0.5;
 }
 
 .restaurant-card img {
@@ -193,10 +198,29 @@ header {
   font-weight: 100;
 }
 
+.card-icon-container:hover i {
+  background-color: linear-gradient(#FF79DA,#9356DC);
+}
+
 footer {
   background-color: rgb(59, 59, 59);
   color: white;
   padding: 20px 0 20px 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  text-align: left;
+  align-items: center;
+}
+
+.footer-title {
+  flex: 0.4;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  flex: 0.6
 }
 
 footer a {
@@ -210,10 +234,12 @@ footer h2 {
 .footer-row {
   display: flex;
   flex-direction: row;
+  padding-left: 5%;
 }
 
 .footer-row i {
   padding-right: 10px;
+  cursor: default;
 }
 
 @media screen and (min-width: 550px) {

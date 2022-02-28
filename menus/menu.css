@@ -123,8 +123,8 @@ h1 {
     align-items: center;
   }
 
-  .main-title i:hover {
-    fill: linear-gradient(#FF79DA,#9356DC);
+  .main-title:hover i {
+    color: linear-gradient(#FF79DA,#9356DC);
   }
 
   .main-content h4 {
@@ -247,6 +247,8 @@ h1 {
   }
 
   footer {
+    display: flex;
+    flex-direction: column;
     background-color: rgb(59, 59, 59);
     color: white;
     padding: 20px 0 20px 20px;
@@ -268,3 +270,5 @@ h1 {
   .footer-row i {
     padding-right: 10px;
   }
+
+  /* <i class="fa-light fa-heart"></i> <i class="fa-solid fa-heart"></i> */
