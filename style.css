@@ -198,29 +198,10 @@ header {
   font-weight: 100;
 }
 
-.card-icon-container:hover i {
-  background-color: linear-gradient(#FF79DA,#9356DC);
-}
-
 footer {
   background-color: rgb(59, 59, 59);
   color: white;
   padding: 20px 0 20px 20px;
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  text-align: left;
-  align-items: center;
-}
-
-.footer-title {
-  flex: 0.4;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: row;
-  flex: 0.6
 }
 
 footer a {
@@ -261,5 +242,39 @@ footer h2 {
     height: 30px;
     width: 30px;
     margin-left: -20%;
+  }
+  footer {
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 20px 0 20px 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+  }
+  
+  .footer-title {
+    flex: 0.3;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    flex: 0.65;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  footer h2 {
+    font-family: 'Shrikhand', sans-serif;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
   }
 }
