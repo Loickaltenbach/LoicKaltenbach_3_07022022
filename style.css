@@ -4,6 +4,24 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0; */
 
+@keyframes emptyHeart {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes fullHeart {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -196,6 +214,36 @@ header {
 .card-bottom-container p {
   color: grey;
   font-weight: 100;
+}
+
+.card-icon-container {
+  font-size: 20px;
+  position: relative;
+}
+
+.far.fa-heart {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+}
+
+.fas.fa-heart {
+  color: #9c47fc;
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
+}
+
+.fas.fa-heart:hover {
+  animation: fullHeart 1s forwards;
+}
+
+.far.fa-heart:hover {
+  animation: emptyHeart 1s forwards;
 }
 
 footer {
