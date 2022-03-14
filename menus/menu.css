@@ -94,10 +94,9 @@ h1 {
     background-color: #fff;
   }
 
-  header i {
-      position: absolute;
-      left: 20px;
-      top: 35px;
+  .back-icon {
+    position: absolute;
+    margin-left: -85%;
   }
 
   .background img {
