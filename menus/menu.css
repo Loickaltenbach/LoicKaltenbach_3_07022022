@@ -208,39 +208,39 @@ h1 {
   }
 
   .two {
-    animation: load 1.5s forwards;
+    animation: load 1.75s forwards;
   }
 
   .three {
-    animation: load 2s forwards;
-  }
-
-  .four {
     animation: load 2.5s forwards;
   }
 
+  .four {
+    animation: load 3.25s forwards;
+  }
+
   .five {
-    animation: load 3s forwards;
-  }
-
-  .six {
-    animation: load 3.5s forwards;
-  }
-
-  .seven {
     animation: load 4s forwards;
   }
 
+  .six {
+    animation: load 4.75s forwards;
+  }
+
+  .seven {
+    animation: load 5.5s forwards;
+  }
+
   .eight {
-    animation: load 4.5s forwards;
+    animation: load 6.25s forwards;
   }
 
   .nine {
-    animation: load 5s forwards;
+    animation: load 7s forwards;
   }
 
   .ten {
-    animation: load 5.5s forwards;
+    animation: load 7.75s forwards;
   }
 
   .menu-card-left label {
