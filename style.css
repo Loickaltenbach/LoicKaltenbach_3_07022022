@@ -4,6 +4,24 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0; */
 
+@keyframes emptyHeart {
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+@keyframes fullHeart {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -196,6 +214,37 @@ header {
 .card-bottom-container p {
   color: grey;
   font-weight: 100;
+}
+
+.checkbox {
+  opacity: 0;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 5px;
+  bottom: -13px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .restaurants_card_body_like_icon::before {
+  content: "\f004";
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-icon-container {
+  font-size: 20px;
+  position: relative;
+}
+
+.far.fa-heart {
+  position: absolute;
+  right: 10px;
+  bottom: -10px;
 }
 
 footer {

@@ -11,7 +11,7 @@
     <body>
         <header>
             <h1>ohmyfood</h1>
-            <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
+            <a href="../index.html" class="back-icon"><i class="fas fa-arrow-left"></i></a>
         </header>
         <div class="background">
             <img src="../images/restaurants/france.jpg" />
@@ -19,7 +19,10 @@
         <div class="main-container">
             <div class="main-title">
                 <h3>La palette du goût</h3>
-                <i class="far fa-heart"></i>
+                <a tabindex="0" class="card-icon-container restaurants_card_body_like">
+                    <input type="checkbox" class="checkbox" />
+                    <i class="far fa-heart restaurants_card_body_like_icon"></i>
+                </a>
             </div>
             <div class="main-content">
                 <h4>Entrées</h4>
