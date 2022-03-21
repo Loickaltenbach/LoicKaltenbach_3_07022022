@@ -216,6 +216,26 @@ header {
   font-weight: 100;
 }
 
+.checkbox {
+  opacity: 0;
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  right: 5px;
+  bottom: -13px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + .restaurants_card_body_like_icon::before {
+  content: "\f004";
+  font-weight: bold;
+  font-family: "Font Awesome 5 Free";
+  background: -webkit-linear-gradient(#9c47fc, #356ad2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .card-icon-container {
   font-size: 20px;
   position: relative;
@@ -225,25 +245,6 @@ header {
   position: absolute;
   right: 10px;
   bottom: -10px;
-}
-
-.fas.fa-heart {
-  color: #9c47fc;
-  background: -webkit-linear-gradient(#9c47fc, #356ad2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: absolute;
-  opacity: 0;
-  right: 10px;
-  bottom: -10px;
-}
-
-.far.fa-heart:hover {
-  animation: emptyHeart forwards;
-}
-
-.fas.fa-heart:hover {
-  animation: fullHeart forwards;
 }
 
 footer {

@@ -161,6 +161,31 @@ h1 {
     align-self: center;
   }
 
+  .checkbox {
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    position: absolute;
+    right: -5px;
+    bottom: 0;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked + .restaurants_card_body_like_icon::before {
+    content: "\f004";
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+    background: -webkit-linear-gradient(#9c47fc, #356ad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .card-icon-container {
+    font-size: 20px;
+    position: relative;
+  }
+
   .menu-card:hover .validate {
     animation: validate 1s forwards;
   }
