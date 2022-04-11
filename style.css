@@ -4,24 +4,6 @@
     --secondary-color: #FF79DA;
     --tertiary-color: #99E2D0; */
 
-@keyframes emptyHeart {
-  from{
-    opacity: 1;
-  }
-  to{
-    opacity: 0;
-  }
-}
-
-@keyframes fullHeart {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-
 .loader {
   position: absolute;
   opacity: 0;
@@ -32,7 +14,7 @@
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  animation: spin 3s linear;
+  animation: spin 1.5s linear;
 }
 
 @keyframes spin {
@@ -301,19 +283,17 @@ footer h2 {
 
   .loader {
     top: 50%;
-    left: 42%;
+    left: 45%;
+    transform: translate(-50%, -50%);
   }
 
   .restaurants-container {
     height: 450px;
+    max-width: 100%;
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-grow: 10%;
-  }
-
-  .restaurant-card {
-    margin-left: 45px;
-    margin-right: 45px;
   }
 
   .step-card {
@@ -361,12 +341,5 @@ footer h2 {
     display: flex;
     flex-direction: row;
     padding-left: 5%;
-  }
-}
-
-@media screen and (min-width: 1060px) {
-  .restaurant-card {
-    margin-left: 1%;
-    margin-right: 1%;
   }
 }
