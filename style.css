@@ -25,13 +25,13 @@
 .loader {
   position: absolute;
   opacity: 0;
-  top: 650px;
-  right: 20px;
+  top: 50%;
+  left: 35%;
   border: 6px solid #99E2D0;
   border-top: 6px solid #9356DC;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 120px;
+  height: 120px;
   animation: spin 3s linear;
 }
 
@@ -115,12 +115,11 @@ header {
   margin-bottom: 20px;
 }
 
-.presentation button {
+.button {
   border: none;
   background: linear-gradient(#FF79DA,#9356DC);
   color: white;
-  height: 45px;
-  width: 175px;
+  padding: 15px 10px 15px 10px;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -301,8 +300,8 @@ footer h2 {
 @media screen and (min-width: 550px) {
 
   .loader {
-    top: 640px;
-    right: 8%;
+    top: 50%;
+    left: 42%;
   }
 
   .restaurants-container {
